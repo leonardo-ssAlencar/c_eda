@@ -13,7 +13,8 @@ Uma simples biblioteca para se estudar estruturas de dados e algoritmos.
 
 ## Introdução:
 
-> [!Warning] Esse repositório é somente para estudo e pode conter código bizarro que eu pensei do nada e implementei (**Vou avisar**). Nesses casos vou tentar explicar minha linha de pensamento, se eu me lembrar de escrever em algum lugar.
+> [!WARNING]  
+> Esse repositório é somente para estudo e pode conter código bizarro que eu pensei do nada e implementei (**Vou avisar nesses casos**). Nesses casos vou tentar explicar minha linha de pensamento, se eu me lembrar de escrever em algum lugar.
 
 
 Estou devendo a mim mesmo um estudo mais aprofundado de estruturas de dados, desta forma aproveitarei para aprender Cmake, e TDD.

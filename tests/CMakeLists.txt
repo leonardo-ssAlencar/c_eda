@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 
-set(test_sources testesLista.cpp)
+set(test_sources testesLista.cpp testeAlgoritmos.cpp testePilha.cpp)
 
 
 include(FetchContent)
@@ -19,7 +19,7 @@ enable_testing()
 add_executable(testes ${test_sources})
 target_link_libraries(
   testes
-  GTest::gtest_main colecao
+  GTest::gtest_main colecao algoritmos
 )
 
 

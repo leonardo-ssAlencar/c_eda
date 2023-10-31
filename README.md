@@ -23,8 +23,6 @@ Não vou fazer em orientação a objetos pelo fato de não querer complicar muit
 
 Vou colocar um pouco de teoria em cada pasta. E alguns comentários, provavelmente junto com Big O.
 
-
-
 ## Tecnologias:
 
 - Cmake 3.20

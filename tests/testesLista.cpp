@@ -30,7 +30,7 @@ TEST(basicoLista, iniciarListaComElementos){
 }
 
 TEST(basicoLista, inserirValor){
-    int tam = 10;
+    int tam = 3;
     sLista *lista = initLista(tam);
 
     int valor1 = 10;
@@ -41,6 +41,23 @@ TEST(basicoLista, inserirValor){
     int valor2 = 20;
     inserir(lista, valor2);
     EXPECT_EQ(valor(lista,1), valor2);
+
+    int valor3 = 30;
+    inserir(lista, valor3);
+    EXPECT_EQ(valor(lista,2), valor3);
+
+    int valores[] = {10,20,30,40};
+
+    inserir(lista, 40);
+    EXPECT_EQ(tamanho(lista),tam*2);
+
+    int valor4 = 25;
+    
+    inserirNoIndice(lista,valor4, 2);
+
+    for(int i = 0; i < posicao(lista); i++){
+        EXPECT_EQ(valor(lista,i), valores[i]);
+    }
 }
 
 
@@ -79,7 +96,9 @@ TEST(basicoLista, removerElemento){
     remover(lista,6);
     qtdVal--;
 
-    int valores3[] = {1,4,5,7,8};
+    int valores3[] = {4,5,7,8};
+
+    removerDoIndice(lista,0);
 
     for(int i = 0; i < posicao(lista); i++){
         EXPECT_EQ(valor(lista, i), valores3[i]);

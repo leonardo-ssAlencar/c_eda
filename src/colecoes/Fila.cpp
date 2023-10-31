@@ -29,6 +29,11 @@ void inserir(sFila *fila, int valor){
 
 }
 
+
+int vazia(sFila* fila){
+    
+}
+
 int retirar(sFila *fila){
 
     return 0;

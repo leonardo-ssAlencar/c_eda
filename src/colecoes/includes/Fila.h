@@ -7,6 +7,7 @@ sFila *initFila(int);
 void destruirFila(sFila*);
 void inserir(sFila*, int);
 int retirar(sFila*);
+int vazia(sFila*);
 
 
 #endif

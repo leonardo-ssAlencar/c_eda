@@ -21,14 +21,16 @@ TEST(pilhaTeste, empilharDesempilhar){
     empilhar(pilha, 50);
 
 
-    EXPECT_EQ(desempilhar(pilha), 20);
-    EXPECT_EQ(desempilhar(pilha), 10);
-    EXPECT_EQ(desempilhar(pilha), -1);
+    EXPECT_EQ(desempilhar(pilha), 20) << "esperado o valor de indice 1";
+    EXPECT_EQ(desempilhar(pilha), 10) << "esperando o valor do indice 0";
+    EXPECT_EQ(desempilhar(pilha), -1) << "pilha vazia";
+
+    EXPECT_TRUE(vazia(pilha));
 
     empilhar(pilha, 40);
     empilhar(pilha, 50);
 
-    EXPECT_EQ(desempilhar(pilha), 50);
+    EXPECT_EQ(desempilhar(pilha), 50) ;
     EXPECT_EQ(desempilhar(pilha), 40);
     EXPECT_EQ(desempilhar(pilha), -1);
 

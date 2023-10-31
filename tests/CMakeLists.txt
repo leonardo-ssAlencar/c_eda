@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 
-set(test_sources testesLista.cpp testeAlgoritmos.cpp testePilha.cpp)
+set(test_sources testesLista.cpp testeAlgoritmos.cpp testePilha.cpp testeFila.cpp)
 
 
 include(FetchContent)
